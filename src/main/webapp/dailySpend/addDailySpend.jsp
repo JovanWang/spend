@@ -43,6 +43,7 @@ $(function(){
 	    		lines : true,
 	    		url:"${pageContext.request.contextPath}/typeAction!tree.action",
 	    		required: false,
+	    		editable: false,
 	    		onChange: function(newValue, oldValue){
 		  	  		countTotal();
 		  	  	},
@@ -57,15 +58,15 @@ $(function(){
 	    	});
 	    	switch (i)
 	    	{
-	    		case 0: $(this).combotree("setValue", "早饭");break;//早饭
-	    		case 1: $(this).combotree("select", 23);break;//午饭
-	    		case 2: $(this).combotree("select", 24);break;//晚饭
-	    		case 3: $(this).combotree("select", 22);break;//早饭
-	    		case 4: $(this).combotree("select", 23);break;//午饭
-	    		case 5: $(this).combotree("select", 24);break;//晚饭
-	    		case 6: $(this).combotree("select", 22);break;//早饭
-	    		case 7: $(this).combotree("select", 23);break;//午饭
-	    		case 8: $(this).combotree("setValue", 24);break;//晚饭
+	    		case 0: $(this).combotree("setValue", "早餐");break;//早饭
+	    		case 1: $(this).combotree("setValue", "午餐");break;//午饭
+	    		case 2: $(this).combotree("setValue", "晚餐");break;//晚饭
+	    		case 3: $(this).combotree("setValue", "早餐");break;//早饭
+	    		case 4: $(this).combotree("setValue", "午餐");break;//午饭
+	    		case 5: $(this).combotree("setValue", "晚餐");break;//晚饭
+	    		case 6: $(this).combotree("setValue", "早餐");break;//早饭
+	    		case 7: $(this).combotree("setValue", "午餐");break;//午饭
+	    		case 8: $(this).combotree("setValue", "晚餐");break;//晚饭
 	    		default:
 	    	}
 	    });
