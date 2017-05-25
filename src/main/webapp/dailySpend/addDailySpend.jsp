@@ -57,14 +57,14 @@ $(function(){
 	    	});
 	    	switch (i)
 	    	{
-	    		case 0: $(this).combotree("setValue", 22);break;//早饭
-	    		case 1: $(this).combotree("setValue", 23);break;//午饭
-	    		case 2: $(this).combotree("setValue", 24);break;//晚饭
-	    		case 3: $(this).combotree("setValue", 22);break;//早饭
-	    		case 4: $(this).combotree("setValue", 23);break;//午饭
-	    		case 5: $(this).combotree("setValue", 24);break;//晚饭
-	    		case 6: $(this).combotree("setValue", 22);break;//早饭
-	    		case 7: $(this).combotree("setValue", 23);break;//午饭
+	    		case 0: $(this).combotree("setValue", "早饭");break;//早饭
+	    		case 1: $(this).combotree("select", 23);break;//午饭
+	    		case 2: $(this).combotree("select", 24);break;//晚饭
+	    		case 3: $(this).combotree("select", 22);break;//早饭
+	    		case 4: $(this).combotree("select", 23);break;//午饭
+	    		case 5: $(this).combotree("select", 24);break;//晚饭
+	    		case 6: $(this).combotree("select", 22);break;//早饭
+	    		case 7: $(this).combotree("select", 23);break;//午饭
 	    		case 8: $(this).combotree("setValue", 24);break;//晚饭
 	    		default:
 	    	}
@@ -157,6 +157,23 @@ function countTotal(){
 		      <td nowrap="nowrap">备注：</td>
 		      <td nowrap="nowrap"><label for="demo"></label>
 	          <input type="text" name="demos" id="demos" /></td>
+	        </tr>
+		    <tr>
+		      <td nowrap="nowrap">日期：</td>
+		      <td nowrap="nowrap"><label for="date"></label>
+		        <input type="text" name="dates" id="dates" /></td>
+		      <td nowrap="nowrap">姓名：</td>
+		      <td nowrap="nowrap"><label for="userId"></label>
+		        <input type="text" name="userIds" id="userIds" /></td>
+		      <td nowrap="nowrap">类别：</td>
+		      <td nowrap="nowrap"><label for="typeId"></label>
+		        <input type="text" name="typeIds" id="typeIds" /></td>
+		      <td nowrap="nowrap">金额：</td>
+		      <td nowrap="nowrap"><label for="amount"></label>
+		        <input type="text" name="amounts" id="amounts" /></td>
+		      <td nowrap="nowrap">备注：</td>
+		      <td nowrap="nowrap"><label for="demo"></label>
+		        <input type="text" name="demos" id="demos" /></td>
 	        </tr>
 		    <tr>
 		      <td nowrap="nowrap">日期：</td>
